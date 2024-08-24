@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #181818);
+    color: white;
+    overflow-x: hidden;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+    filter: blur(2px);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    backdrop-filter: blur(8px);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff4d4d;
+}
+
+.join-button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.join-button:hover {
+    background-color: #ff1a1a;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.content-section {
+    padding: 80px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: black;
+    padding: 40px 0;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 50px;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.discord-link {
+    color: #7289da;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.discord-link:hover {
+    color: #99a9f4;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
