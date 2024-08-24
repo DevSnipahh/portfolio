@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Header and Navigation */
 .header {
     position: relative;
     height: 100vh;
@@ -19,7 +21,6 @@ body {
     align-items: center;
     text-align: center;
     background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
-    filter: blur(2px);
 }
 
 .navbar {
@@ -30,7 +31,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
 }
 
 .nav-links {
@@ -47,12 +49,12 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #ff4d4d;
+    color: #ff99cc; /* Light Pink */
 }
 
 .join-button {
     padding: 10px 20px;
-    background-color: #ff4d4d;
+    background-color: #ff66b2; /* Mid Pink */
     color: white;
     border: none;
     cursor: pointer;
@@ -60,24 +62,30 @@ body {
 }
 
 .join-button:hover {
-    background-color: #ff1a1a;
+    background-color: #ff3399; /* Darker Pink */
 }
 
+/* Hero Section */
 .hero-section h1 {
     font-size: 4rem;
     animation: fadeInDown 1s ease-out;
+    filter: none;
 }
 
 .hero-section p {
     font-size: 1.5rem;
     margin-top: 10px;
     animation: fadeInUp 1s ease-out;
+    filter: none;
 }
 
+/* Content Section */
 .content-section {
     padding: 80px;
     text-align: center;
-    animation: slideIn 1s ease-in-out;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s ease-in-out forwards;
 }
 
 .content-section h2 {
@@ -89,6 +97,7 @@ body {
     font-size: 1.2rem;
 }
 
+/* Footer */
 footer {
     background-color: black;
     padding: 40px 0;
@@ -114,16 +123,17 @@ footer {
 }
 
 .discord-link {
-    color: #7289da;
+    color: #ff99cc; /* Light Pink */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .discord-link:hover {
-    color: #99a9f4;
+    color: #ff66b2; /* Mid Pink */
 }
 
+/* Animations */
 @keyframes fadeInDown {
     0% {
         opacity: 0;
